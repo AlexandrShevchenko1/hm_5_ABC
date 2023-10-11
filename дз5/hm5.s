@@ -9,20 +9,20 @@ prompt03: .asciz "Sum = "
 array: .space 40
 main:
 .text
-# КОД НА ФУНКЦИЯХ:
+# CODE FOR FUNCTIONS:
 	li a1 11 # upper not included bound 
 	jal get_size
 	mv s0 a0 # s0 = number of elements
 	
 	la a1 array
-	li a2 0		# щётчик
+	li a2 0		# counter
 	jal get_input
         
-        li a4 2147483647	# максимальное 32 битное число
-	li a5 -2147483648	# максимальное 32 битное число
-	li a3 0		# сумма
+        li a4 2147483647	# Д›Е•Д™Е„ДЌД›Е•Г«ГјГ­Г®Дє 32 ГЎДЌЕ€Г­Г®Дє Г·ДЌЕ„Г«Г®
+	li a5 -2147483648	# Д›Е•Д™Е„ДЌД›Е•Г«ГјГ­Г®Дє 32 ГЎДЌЕ€Г­Г®Дє Г·ДЌЕ„Г«Г®
+	li a3 0		# sum
 	la a0 array
-	li a1 0		# щётчик
+	li a1 0		# counter
 	jal get_sum
 	
 	la a1 array
@@ -32,7 +32,7 @@ main:
 	
 	
 	
-# КОД НА МАКСРОСАХ:
+# MACROS CODE:
 	#li a1 11
 	#get_size(a1)
 	#mv s0 a0
