@@ -28,7 +28,7 @@
 .text
 	get_size:
 		addi sp sp -4
-		sw ra (sp) # для маштабируемости кода 
+		sw ra (sp) # to scale the code
 		
 		numberOfElements:		
 		print_prompt("Number of Elements in your array = " )
