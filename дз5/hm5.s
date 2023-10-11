@@ -18,8 +18,8 @@ main:
 	li a2 0		# counter
 	jal get_input
         
-        li a4 2147483647	# ěŕęńčěŕëüíîĺ 32 áčňíîĺ ÷čńëî
-	li a5 -2147483648	# ěŕęńčěŕëüíîĺ 32 áčňíîĺ ÷čńëî
+        li a4 2147483647	# maximum 32 bit integer
+	li a5 -2147483648	# minimum 32 bit integer
 	li a3 0		# sum
 	la a0 array
 	li a1 0		# counter
